@@ -6,9 +6,9 @@ ARG TERM=xterm-256color
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN mkdir -p /etc/twinepm-server-heroku/web/
+RUN mkdir -p /etc/twine-package-manager/web/
 
-WORKDIR /etc/twinepm-server-heroku/web/
+WORKDIR /etc/twine-package-manager/web/
 
 COPY . .
 
