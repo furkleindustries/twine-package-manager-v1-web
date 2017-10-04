@@ -13,6 +13,5 @@ WORKDIR /etc/twinepm-server-heroku/web/
 COPY . .
 
 RUN \
-    apt-get update && \
-    apt-get install -y python3 && \
+    apt-get install -y python3 --no-install-recommends && \
     scripts/installWebDependencies
