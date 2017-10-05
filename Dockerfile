@@ -14,7 +14,7 @@ COPY . .
 
 RUN \
     apt-get update && \
-    apt-get install -y python3.6 \
+    apt-get install -y python3.7 \
         --no-install-recommends \
         --no-install-suggests && \
     scripts/installWebDependencies
