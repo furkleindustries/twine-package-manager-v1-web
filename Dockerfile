@@ -17,6 +17,7 @@ RUN \
     apt-get install -y \
         --no-install-recommends \
         --no-install-suggests \
+        ca-certificates \
         libffi-dev \
         wget \
         zlib1g-dev && \
