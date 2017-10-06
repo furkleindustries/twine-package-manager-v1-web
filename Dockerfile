@@ -29,7 +29,7 @@ RUN \
         # Do not install suggested packages so as to reduce build time. \
         --no-install-suggests \
         # Needed to compile C. \
-        build-essentials \
+        gcc \
         # Needed to use HTTPS. \
         ca-certificates \
         # Needed for Python's _ctypes. \
