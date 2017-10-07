@@ -28,12 +28,14 @@ RUN \
         --no-install-recommends \
         # Do not install suggested packages so as to reduce build time. \
         --no-install-suggests \
-        # Needed to compile C. \
-        gcc \
         # Needed to use HTTPS. \
         ca-certificates \
+        # Needed to compile C. \
+        gcc \
         # Needed for Python's _ctypes. \
         libffi-dev \
+        # Needed to compile C. \
+        make \
         # Needed to download source archive. \
         wget \
         # Needed to extract source archive. \
