@@ -13,9 +13,6 @@ parser = argparse.ArgumentParser(description='Install dependencies for ' +
 args = parser.parse_args()
 
 base_dir = '/etc/twine-package-manager/'
-with open('/usr/share/nginx/html/index.php', 'w') as f:
-    f.write('<?php require_once "{}logic/index.php"; ?>'.format(base_dir))
-
 shutil.copy2('{}web/site.conf'.format(base_dir), '/etc/nginx/conf.d/default.conf')
 shutil.copy2('{}web/mime.types'.format(base_dir), '/etc/nginx/')
 
